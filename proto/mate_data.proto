@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package acme.mate_data.v1;
+
+message BlockMeta {
+  string hash = 1;
+  uint64 number = 2;
+  string parent_hash = 3;
+  string timestamp = 4;
+}
+
+message BlockTrace {
+  string status = 1;
+  string from = 2;
+  string to = 3;
+}
